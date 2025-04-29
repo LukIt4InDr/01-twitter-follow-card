@@ -1,4 +1,11 @@
 export function TwitterFollowCard ({ userName, name, isFollowing }) {
+    const buttonClassName = isFollowing ? 'tw-follow-card-button is-following' : 'tw-follow-card-button'
+    const buttonText = isFollowing ? 'Siguiendo' : 'Seguir'
+    
+    const Follow = () => {
+        console.log("Siguiendo")
+    }
+
     return (
         <article className="tw-follow-card">
             <div className="tw-follow-card-user">
@@ -9,8 +16,9 @@ export function TwitterFollowCard ({ userName, name, isFollowing }) {
                 </div>
             </div>
             
-            <button className="tw-follow-card-button">
-                <strong>Seguir</strong>
+            <button className={buttonClassName} onClick={Follow}>
+                <strong className="tw-follow-card-button-text">{buttonText}</strong>
+                <strong className="tw-follow-card-button-unfollow-text">Dejar de seguir</strong>
             </button>
         </article>
     )

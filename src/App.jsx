@@ -10,7 +10,7 @@ export function App () {
         </header>
 
         <TwitterFollowCard userName={"shirakamifubuki"} name={"白上フブキ🌽フブキングダム👑"} isFollowing></TwitterFollowCard>
-        <TwitterFollowCard userName={"shirakamifubuki"} name={"白上フブキ🌽フブキングダム👑"} isFollowing></TwitterFollowCard>
+        <TwitterFollowCard userName={"shirakamifubuki"} name={"白上フブキ🌽フブキングダム👑"} isFollowing={false}></TwitterFollowCard>
         <TwitterFollowCard userName={"shirakamifubuki"} name={"白上フブキ🌽フブキングダム👑"} isFollowing></TwitterFollowCard>
 
         <footer className='tw-follow-card-footer'>
